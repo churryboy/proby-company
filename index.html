@@ -17,7 +17,7 @@
       --color-border: #e5e7eb;
       --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
       --max-width: 720px;
-      --section-padding: 4rem 1.5rem;
+      --section-padding: 24px;
     }
 
     * {
@@ -44,6 +44,18 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-link {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      text-decoration: none;
+    }
+
+    .header-link:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
     }
 
     .logo {
@@ -53,7 +65,7 @@
     }
 
     .hero {
-      padding: 0 0 4rem;
+      padding: 0 0 24px;
       text-align: center;
       background: #fafafa;
     }
@@ -69,7 +81,7 @@
     .hero-inner {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 3rem 1.5rem 0;
+      padding: 24px 24px 0;
     }
 
     .hero-title {
@@ -211,33 +223,6 @@
       margin-bottom: 0.35rem;
     }
 
-    .footer-cta {
-      padding: 4rem 1.5rem;
-      text-align: center;
-      background: var(--color-text);
-      color: #fff;
-    }
-
-    .footer-cta-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-    }
-
-    .footer-cta .section-title {
-      color: inherit;
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-cta .section-body {
-      color: rgba(255,255,255,0.85);
-      margin-bottom: 1.5rem;
-    }
-
-    .footer-cta .cta {
-      background: #fff;
-      color: var(--color-text);
-    }
-
     .team-rows {
       margin-top: 1.25rem;
       display: flex;
@@ -319,6 +304,7 @@
   <header class="header">
     <div class="header-inner">
       <img src="assets/logo-text.png" alt="Proby" class="logo" />
+      <a href="https://www.proby.io" target="_blank" rel="noopener" class="header-link">제품 사이트</a>
     </div>
   </header>
 
@@ -473,13 +459,6 @@
       </div>
     </section>
 
-    <section class="footer-cta" id="contact">
-      <div class="footer-cta-inner">
-        <h2 class="section-title">함께여서 더 큰 변화를 만듭니다.</h2>
-        <p class="section-body">Proby에서 새로운 기준과 미래를 당신과 함께 만들어가고 싶습니다.</p>
-        <a href="mailto:hello@proby.io?subject=채용 문의" class="cta">채용 문의하기</a>
-      </div>
-    </section>
   </main>
 </body>
 </html>
