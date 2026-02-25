@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Pretendard", "-apple-system", "BlinkMacSystemFont", "system-ui", "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>About - Proby</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 lg:px-40 py-4">
+<div class="flex items-center justify-between max-w-[1200px] mx-auto">
+<div class="flex items-center gap-3">
+<a href="index.html"><img alt="Proby Logo" class="h-8 w-auto object-contain" src="assets/header.png"/></a>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium text-primary font-bold" href="about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://www.proby.io" target="_blank" rel="noopener noreferrer">Our product</a>
+</nav>
+<a href="https://www.proby.io/landing/contact" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-slate-800 text-white h-12 px-8 rounded-lg font-bold transition-all flex items-center justify-center">
+                    Get in Touch
+                </a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full mb-20">
+<div class="relative w-full h-[500px] overflow-hidden shadow-2xl group">
+<img alt="About Hero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/about-hero.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay z-10"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 lg:px-40 z-20 max-w-[1200px] w-full">
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight max-w-3xl mb-4">사용자 중심의<br/>리서치 솔루션</h1>
+<p class="text-slate-200 text-lg md:text-xl max-w-2xl leading-relaxed">AI 기반 사용자 리서치 플랫폼으로 더 깊은 인사이트를 제공합니다.</p>
+</div>
+</div>
+</section>
+
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-20 lg:px-40 py-10">
+<!-- Mission Section -->
+<section class="mb-20">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">우리의 미션</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">사용자의 진짜 목소리를 듣고, 데이터 기반의 명확한 인사이트를 제공하여 더 나은 제품과 서비스를 만드는 것을 목표로 합니다.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">psychology</span>
+<h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white">AI 기반 분석</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">최신 AI 기술을 활용하여 대규모 사용자 데이터를 효율적으로 분석하고 심층적인 인사이트를 도출합니다.</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">groups</span>
+<h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white">사용자 중심</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">사용자의 실제 경험과 니즈를 이해하고, 이를 바탕으로 실행 가능한 솔루션을 제안합니다.</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">insights</span>
+<h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white">데이터 기반 의사결정</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">정성적, 정량적 데이터를 통합하여 신뢰할 수 있는 의사결정 근거를 제공합니다.</p>
+</div>
+</div>
+</section>
+
+<!-- Team Section -->
+<section class="mb-20">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">팀 소개</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed">다양한 배경과 전문성을 가진 팀원들이 함께 더 나은 사용자 경험을 만들어갑니다.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm hover:shadow-xl transition-all group">
+<div class="mb-6">
+<img alt="김유빈" class="w-full aspect-[4/5] object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-300" src="assets/team/kim-yubin.png"/>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">김유빈</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">CEO</p>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">회사의 전략과 비전을 수립하며, AI 기반 사용자 리서치 플랫폼의 성장을 이끌어갑니다.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm hover:shadow-xl transition-all group">
+<div class="mb-6">
+<img alt="이철희" class="w-full aspect-[4/5] object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-300" src="assets/team/lee-chulhee.png"/>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">이철희</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">CBO</p>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">비즈니스 전략 수립과 파트너십 개발을 통해 회사의 사업 확장을 주도합니다.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm hover:shadow-xl transition-all group">
+<div class="mb-6">
+<img alt="진현우" class="w-full aspect-[4/5] object-cover rounded-xl mb-4 group-hover:scale-105 transition-transform duration-300" src="assets/team/jin-hyunwoo.png"/>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">진현우</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">CTO</p>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">기술 전략과 제품 개발을 총괄하며, AI 기반 리서치 플랫폼의 기술적 우수성을 확보합니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Values Section -->
+<section class="mb-20">
+<div class="bg-primary text-white rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center">우리의 가치</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-3">투명성</h3>
+<p class="text-white/80 leading-relaxed">모든 연구 과정과 결과를 투명하게 공유하며, 신뢰할 수 있는 데이터를 제공합니다.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-3">혁신</h3>
+<p class="text-white/80 leading-relaxed">최신 기술과 방법론을 도입하여 더 효율적이고 정확한 리서치를 수행합니다.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-3">실행력</h3>
+<p class="text-white/80 leading-relaxed">인사이트를 단순한 정보가 아닌 실행 가능한 솔루션으로 전환합니다.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-3">협업</h3>
+<p class="text-white/80 leading-relaxed">클라이언트와의 긴밀한 협업을 통해 최적의 결과를 만들어냅니다.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="mb-20">
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 md:p-12 shadow-sm">
+<div class="text-center mb-8">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">함께 일하고 싶으신가요?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">프로젝트 문의나 협업 제안을 환영합니다. 언제든지 연락주세요.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a href="https://www.proby.io/landing/contact" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-slate-800 text-white h-12 px-8 rounded-lg font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">mail</span>
+이메일 보내기
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full bg-primary text-white py-12 mt-20">
+<div class="max-w-[1200px] mx-auto px-6 md:px-20 lg:px-40 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">biotech</span>
+</div>
+<span class="font-bold text-lg">Proby</span>
+</div>
+<p class="text-slate-400 text-sm">© 2026 Proby. AI 기반 사용자 리서치 플랫폼.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Pretendard", "-apple-system", "BlinkMacSystemFont", "system-ui", "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Research Case Study</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 lg:px-40 py-4">
+<div class="flex items-center justify-between max-w-[1200px] mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Proby Logo" class="h-8 w-auto object-contain" src="assets/header.png"/>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="index.html">Work</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://www.proby.io" target="_blank" rel="noopener noreferrer">Our product</a>
+</nav>
+<a href="https://www.proby.io/landing/contact" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-slate-800 text-white h-12 px-8 rounded-lg font-bold transition-all flex items-center justify-center">
+                    Get in Touch
+                </a>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 md:px-20 lg:px-40 py-10">
+<div class="w-full mb-12">
+<div class="relative w-full h-[400px] rounded-xl overflow-hidden shadow-2xl group">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay z-10"></div>
+<img alt="Case Study Hero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/hero.jpeg"/>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 z-20">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-black rounded-full mb-4 inline-block tracking-widest uppercase">웹소설 플랫폼 리서치</span>
+<h1 class="text-white text-3xl md:text-5xl font-extrabold leading-tight max-w-2xl">연재형-단행본 교차 구매 동기 분석</h1>
+<p class="text-slate-200 mt-4 text-lg max-w-xl">연재형 소장 유저의 단행본 추가 구매 시 기대 가치와 니즈 파악</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<aside class="lg:w-1/4">
+<div class="sticky top-28 flex flex-col gap-6">
+<div class="p-5 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<p class="text-slate-400 dark:text-slate-500 text-xs font-bold uppercase tracking-widest mb-4">케이스 스터디 섹션</p>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-primary font-bold" href="#overview">
+<span class="material-symbols-outlined text-xl">info</span>
+<span class="text-sm">개요</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#methodology">
+<span class="material-symbols-outlined text-xl">science</span>
+<span class="text-sm">연구 방법론</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#findings">
+<span class="material-symbols-outlined text-xl">insights</span>
+<span class="text-sm">주요 발견사항</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#impact">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="text-sm">성과 및 ROI</span>
+</a>
+</nav>
+</div>
+</div>
+</aside>
+<div class="lg:w-3/4 flex flex-col gap-16">
+<section class="scroll-mt-32" id="overview">
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold mb-4">프로젝트 개요</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">웹소설 플랫폼에서 연재형으로 동일 분량을 이미 구매한 유저가 단행본을 추가로 구매하는 현상에 대한 심층 분석이 필요했습니다. 이 프로젝트는 교차 구매 동기를 파악하고, 연재형 소장 유저가 단행본 추가 구매 시 기대하는 가치와 니즈를 명확히 하는 것을 목표로 했습니다.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3 text-2xl">report_problem</span>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">배경 및 목적</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">연재형으로 동일 분량을 이미 구매한 유저가 단행본을 추가로 구매하는 이유와 동기를 파악하고자 함</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3 text-2xl">help</span>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">핵심 질문</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">연재형 소장 유저가 단행본 추가 구매 시 기대하는 가치와 니즈는 무엇인가?</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3 text-2xl">person</span>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">조사 대상</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">동일 IP 내 연재형에서 단행본으로 교차 구매한 경험이 있는 유저</p>
+</div>
+</div>
+</section>
+<section class="scroll-mt-32" id="methodology">
+<h2 class="text-3xl font-extrabold mb-8">연구 방법론</h2>
+<div class="flex flex-col gap-8 mb-12">
+<div class="flex gap-6 items-start">
+<div class="size-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">smart_toy</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-1">AI Moderated Survey</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">동일 IP 내 연재형에서 단행본으로 교차 구매한 경험이 있는 유저를 대상으로 AI가 모더레이션하는 설문 조사를 진행했습니다. 연재형 소장 유저가 단행본 추가 구매 시 기대하는 가치와 니즈를 심층적으로 탐구했습니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic border-l-2 border-primary pl-4">AI Moderated Survey는 전통적인 IDI 대비 더 많은 응답자를 효율적으로 수집할 수 있으며, AI가 실시간으로 응답을 분석하고 후속 질문을 생성하여 각 응답자의 맥락에 맞는 심층적인 인사이트를 도출할 수 있습니다. 또한 응답자의 편안함과 솔직함을 유지하면서도 일관된 질문 프레임워크를 적용하여 데이터의 신뢰성과 비교 가능성을 높입니다.</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+<h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">유저 세그먼트 가설</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">세그먼트별로 교차 구매 동기가 다를 것으로 가정하며, 구매 권수에 따른 비중은 다음과 같습니다.</p>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-slate-900 dark:text-white">One time</h4>
+<span class="text-primary font-black text-xl">32.3%</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">1권 구매</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-slate-900 dark:text-white">Average</h4>
+<span class="text-primary font-black text-xl">34.8%</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">2권~4권 구매</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-slate-900 dark:text-white">Light heavy</h4>
+<span class="text-primary font-black text-xl">27.1%</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">5권~20권 구매</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-slate-900 dark:text-white">Super heavy</h4>
+<span class="text-primary font-black text-xl">5.8%</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">21권 이상 구매</p>
+</div>
+</div>
+</div>
+</section>
+<section class="scroll-mt-32" id="findings">
+<h2 class="text-3xl font-extrabold mb-8">주요 연구 발견사항</h2>
+<div class="bg-primary p-8 md:p-12 rounded-2xl text-white mb-12 relative overflow-hidden shadow-2xl">
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/3 text-center">
+<div class="text-6xl font-black mb-2">76%</div>
+<div class="text-white/80 text-sm font-medium uppercase tracking-widest">단행본 선호</div>
+</div>
+<div class="md:w-2/3">
+<p class="text-xl md:text-2xl font-light italic leading-relaxed">"연재형과 단행본의 가장 큰 차이는 흐름의 연속성입니다. 단행본은 끊김 없이 쭉 읽을 수 있어 몰입감이 훨씬 좋아요."</p>
+<p class="mt-4 text-sm font-bold text-white/70">— Super Heavy 유저</p>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+</div>
+<div class="space-y-6">
+<div class="p-8 bg-white dark:bg-slate-900 border-l-4 border-primary rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">발견사항 1: 몰입의 완결성과 기능적 편의성이 재구매의 핵심 동기</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">대다수 유저(76%)는 연재형보다 단행본을 선호합니다. 연재 특유의 화별 끊김(로딩, 다음 화 버튼 클릭) 없이 긴 호흡으로 감정선을 유지하며 깊이 있게 몰입할 수 있는 '완성된 독서 경험'을 제공하기 때문입니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic">"연재본은 다음 편 버튼을 계속 눌러야 해서 몰입이 쉽게 깨지고 귀찮다고 느꼈다. 반면 단행본은 흐름이 길어 끝까지 몰입할 수 있고, 감정이 그대로 유지되는 경험."</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-900 border-l-4 border-primary rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">발견사항 2: '낱장'에서 '완성된 책'으로의 심리적 가치 전환</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">유저들은 연재형 작품을 토막난 글이나 낱장처럼 느끼는 반면, 단행본은 '내 서재에 꽂힌 실체적인 책'이라는 소유감을 주며, 이런 심리적인 소장 가치가 중복 구매의 경제적 부담을 상쇄합니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic">"연재는 낱장으로 돌려보는 느낌이라면, 단행본은 내가 소장하는 느낌을 줘요. 책꽂이에 책을 꽂는 듯한 소유감 충족도 중요한 구매 이유에요."</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-900 border-l-4 border-primary rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">발견사항 3: 정제된 품질과 단행본 전용 콘텐츠의 유료 가치</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">매일 마감에 쫓기는 연재본은 오타나 설정 오류가 잦아 감상의 질을 떨어뜨리는 반면, 단행본의 교정/교열을 거쳐 정제된 원고와 특별 외전, 삽화, 작가 Q&A 등 추가요소를 '돈값을 하는 가치'로 판단하여 구매를 결정합니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic">"단행본에 연재본에 없던 내용, 삽화, 혹은 내용 수정이 있거나 할인 이벤트로 저렴하게 구매할 수 있다는 점 때문에 단행본 구매를 결정하는 경우가 있어요."</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-900 border-l-4 border-primary rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">발견사항 4: 연재본 자동 묶음 기능에 대한 강력한 니즈</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">33명 중 31명(94%)이 연재본을 단행본처럼 묶어서 볼 수 있는 기능에 대해 긍정적인 반응을 보였습니다. 유저들은 "연재의 재미(실시간 댓글, 빠른 감상)를 유지하면서 단행본의 쾌적한 UX(몰입, 탐색)를 누리고 싶기 때문"입니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic">"연재는 1화 끝나고 로딩하는 속도가 있는데, 단행본처럼 쭉 나오면 오디오(TTS)로 들을 때 굉장히 편리해진다."</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-900 border-l-4 border-primary rounded-r-xl shadow-sm hover:shadow-md transition-shadow">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">발견사항 5: 경제적 역차별 인식과 플랫폼 충성도 저해 요소</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">연재 때부터 작품을 지지해온 초기 독자들이 완결 후 단행본 세트 할인 혜택에서 소외된다는 역차별에 대한 강한 불만이 존재하며, 자동 묶음 기능은 이러한 경제적 페인 포인트를 해소하여 연재 진입 장벽을 낮출 수 있습니다.</p>
+<p class="text-sm text-slate-500 dark:text-slate-500 italic">"연재형을 소장하는 경우 불이익을 받는다. 나중에 완결됐을 때 더 할인해서 뿌리는데... 내가 왜 손해를 보지?"</p>
+</div>
+</div>
+</section>
+<section class="scroll-mt-32" id="impact">
+<h2 class="text-3xl font-extrabold mb-8">최종 성과 및 권장사항</h2>
+<div class="space-y-8 mb-12">
+<div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
+<h3 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">핵심 권장사항</h3>
+<div class="space-y-6">
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">1. 연재본 자동 묶음 기능 도입</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">94%의 유저가 긍정적으로 반응한 연재본 자동 묶음 기능을 우선적으로 도입해야 합니다. 이 기능은 연재의 재미(실시간 댓글)를 유지하면서 단행본의 쾌적한 UX(몰입, 탐색)를 제공하여 사용자 만족도를 크게 향상시킬 수 있습니다.</p>
+<ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-2 ml-4">
+<li>로딩 제거 및 TTS 연속 재생 지원</li>
+<li>형광펜/메모 통합 관리 기능</li>
+<li>이중 지출 방지 및 비용 효율성 제공</li>
+<li>연재 댓글 기능 유지</li>
+</ul>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">2. 단행본 차별화 전략 강화</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">단순 합본을 넘어선 '편집의 미학'과 '독점 콘텐츠'를 강화하여 소장 가치를 차별화해야 합니다. 묶음 기능이 단행본을 대체할 수 있도록 고품질 편집과 독점 데이터를 제공해야 합니다.</p>
+<ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-2 ml-4">
+<li>교정/교열을 거친 정제된 텍스트</li>
+<li>단행본 전용 외전, 삽화, 작가 Q&A</li>
+<li>목차 및 챕터 편집의 미학</li>
+<li>수위 조정 및 추가 콘텐츠</li>
+</ul>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">3. 초기 독자 보상 프로그램</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">연재 때부터 작품을 지지해온 초기 독자에 대한 역차별 문제를 해결하기 위해 보상 프로그램을 도입해야 합니다. 이는 플랫폼 충성도를 높이고 연재 진입 장벽을 낮추는 효과가 있습니다.</p>
+<ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-2 ml-4">
+<li>단행본 세트 구매 시 기존 결제 금액 차감</li>
+<li>연재 소장자 전용 할인 혜택</li>
+<li>초기 독자 우대 프로그램</li>
+</ul>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
+<h4 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">4. 세그먼트별 맞춤 전략</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-3">유저 세그먼트별로 구매 동기와 니즈가 다르므로, 각 그룹에 맞는 차별화된 접근이 필요합니다.</p>
+<div class="grid md:grid-cols-2 gap-4 mt-4">
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg">
+<h5 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Average (편의성 중시)</h5>
+<p class="text-xs text-slate-600 dark:text-slate-400">묶음 기능을 완벽한 대체재로 인식. 편의성 중심의 기능 강화 필요</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg">
+<h5 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Light Heavy (소장 가치 중시)</h5>
+<p class="text-xs text-slate-600 dark:text-slate-400">서재 정리 및 시각적 만족감 제공. 완성도 높은 편집본 선호</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg">
+<h5 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Super Heavy (팬심/후원 중시)</h5>
+<p class="text-xs text-slate-600 dark:text-slate-400">작가 후원 의식이 강함. 독점 콘텐츠와 고품질 편집본 제공</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg">
+<h5 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">One time (가성비 중시)</h5>
+<p class="text-xs text-slate-600 dark:text-slate-400">프로모션 및 할인 이벤트에 민감. 가격 혜택 중심의 마케팅</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/5 border-2 border-primary rounded-2xl p-8 mb-12">
+<h3 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">예상 효과</h3>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="text-center p-6 bg-white dark:bg-slate-900 rounded-xl">
+<div class="text-4xl font-black text-primary mb-2">94%</div>
+<div class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-tighter">묶음 기능 긍정 반응</div>
+<p class="text-xs text-slate-600 dark:text-slate-400 mt-2">33명 중 31명이 긍정적 평가</p>
+</div>
+<div class="text-center p-6 bg-white dark:bg-slate-900 rounded-xl">
+<div class="text-4xl font-black text-primary mb-2">76%</div>
+<div class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-tighter">단행본 선호도</div>
+<p class="text-xs text-slate-600 dark:text-slate-400 mt-2">연재형 대비 압도적 선호</p>
+</div>
+<div class="text-center p-6 bg-white dark:bg-slate-900 rounded-xl">
+<div class="text-4xl font-black text-primary mb-2">26명</div>
+<div class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-tighter">몰입도 향상 니즈</div>
+<p class="text-xs text-slate-600 dark:text-slate-400 mt-2">감상 편의성 개선 요구</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
+<h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">주의사항</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">연재본 자동 묶음 기능은 사용자 만족도를 크게 향상시킬 수 있으나, 단행본 판매 수익에 영향을 줄 수 있는 양날의 검입니다. Average 그룹의 약 80%가 단행본 구매를 중단할 의사를 보였으므로, 단행본의 차별화된 가치(편집 품질, 독점 콘텐츠)를 강화하여 매출 잠식을 최소화해야 합니다.</p>
+</div>
+</section>
+<div class="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h4 class="text-xl font-bold">다음 케이스 스터디</h4>
+<p class="text-slate-600 dark:text-slate-400">FinTech 플랫폼 접근성 개선</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold group" href="#">
+                        프로젝트 보기
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full bg-primary text-white py-12 mt-20">
+<div class="max-w-[1200px] mx-auto px-6 md:px-20 lg:px-40 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">biotech</span>
+</div>
+<span class="font-bold text-lg">Proby</span>
+</div>
+<p class="text-slate-400 text-sm">© 2026 Proby. AI 기반 사용자 리서치 플랫폼.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
